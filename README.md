@@ -1,2 +1,1 @@
-# Cconsolegame
- DimiDel
+CConM 폴더를 C드라이브로 옮겨주세요

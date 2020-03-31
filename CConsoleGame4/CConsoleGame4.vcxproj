@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{EC935437-C288-4422-B5EB-D7424E34334E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CConsoleGame4</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CConsole.c">
+      <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</SDLCheck>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CConsoleGame4.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\CConM\BoardBack.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BoxstickF.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BoxstickF0.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF4.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF5.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF6.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\BstickF7.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\ChatGood.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\ChatSad.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\ClassStick.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Dojang.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\End1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\End2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\End3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\gay.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\GayBack.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\LeaderBoard.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\LeaderBoardInput.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Map2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\MapConT.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\MapLast.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\MiniBox.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1BigBox1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1BigBox2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1BigBox3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1BigBox4.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1Box1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1Box2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1Box3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1Box4.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1FBox1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1FBox2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1FBox3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\P1FBox4.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House1FX.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House1OK.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House2FX.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House2OK.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House3FX.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2House3OK.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2Truck1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Ph2Truck2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\Phone.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\StampCursor.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF0.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF1.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF2.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF3.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF4.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF5.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF6.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\stickF7.bmp" />
+    <Image Include="..\..\..\..\..\..\CConM\TruckNext.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BoardBack.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BoxstickF.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BoxstickF0.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF4.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF5.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF6.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\BstickF7.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\ChatGood.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\ChatSad.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\ClassStick.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Dojang.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\End1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\End2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\End3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\gay.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\GayBack.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\LeaderBoard.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\LeaderBoardInput.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Map2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\MapConT.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\MapLast.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\MiniBox.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1BigBox3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1BigBox4.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1Box1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1Box2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1Box3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1Box4.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1FBox1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1FBox2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1FBox3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\P1FBox4.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House1FX.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House1OK.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House2FX.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House2OK.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House3FX.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2House3OK.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2Truck1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Ph2Truck2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\Phone.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\StampCursor.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF0.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF1.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF2.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF3.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF4.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF5.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF6.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\stickF7.bmp" />
+    <Image Include="..\..\..\..\Desktop\Kang\CConM\TruckNext.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
