@@ -1641,38 +1641,38 @@ RESTART: //다시시작을 위한 goto문
 	}	 
 	Start2 = clock();
 
-	//while (1) //1페이즈 
-	//{
-	//	End2 = clock();
-	//	if (Start != 0)
-	//	{
-	//		End = clock();
-	//		if ((float)(End - Start) / CLOCKS_PER_SEC > 2)
-	//		{
-	//			Box.Fault = 0;
-	//			Start = 0;
-	//			End = 0;
-	//		}
-	//	}
-	//	if (30 < (int)((End2 - Start2) / CLOCKS_PER_SEC))
-	//		break;
-	//	if (Moving(&StickVal, &Coll, Stick, &Box, VK_UP, 0, -StickVal.StickManSpeed, 0)) continue; //움직이는 부분
+	while (1) //1페이즈 
+	{
+		End2 = clock();
+		if (Start != 0)
+		{
+			End = clock();
+			if ((float)(End - Start) / CLOCKS_PER_SEC > 2)
+			{
+				Box.Fault = 0;
+				Start = 0;
+				End = 0;
+			}
+		}
+		if (30 < (int)((End2 - Start2) / CLOCKS_PER_SEC))
+			break;
+		if (Moving(&StickVal, &Coll, Stick, &Box, VK_UP, 0, -StickVal.StickManSpeed, 0)) continue; //움직이는 부분
 
-	//	if (Moving(&StickVal, &Coll, Stick, &Box, VK_DOWN, 0, StickVal.StickManSpeed, 1)) continue;
+		if (Moving(&StickVal, &Coll, Stick, &Box, VK_DOWN, 0, StickVal.StickManSpeed, 1)) continue;
 
-	//	if (Moving(&StickVal, &Coll, Stick, &Box, VK_LEFT, -StickVal.StickManSpeed, 0, 2)) continue;
+		if (Moving(&StickVal, &Coll, Stick, &Box, VK_LEFT, -StickVal.StickManSpeed, 0, 2)) continue;
 
-	//	if (Moving(&StickVal, &Coll, Stick, &Box, VK_RIGHT, StickVal.StickManSpeed, 0, 3)) continue;
+		if (Moving(&StickVal, &Coll, Stick, &Box, VK_RIGHT, StickVal.StickManSpeed, 0, 3)) continue;
 
-	//	else
-	//	{
-	//		if (StickVal.GetBox == 1) //박스를 집었을때 플레이어 이미지 변경
-	//		{
-	//			Render(Stick[4].FBit, &StickVal, &Box, 4);
-	//		}
-	//		else Render(Stick[4].Bit, &StickVal, &Box, 4);
-	//	}
-	//}
+		else
+		{
+			if (StickVal.GetBox == 1) //박스를 집었을때 플레이어 이미지 변경
+			{
+				Render(Stick[4].FBit, &StickVal, &Box, 4);
+			}
+			else Render(Stick[4].Bit, &StickVal, &Box, 4);
+		}
+	}
 	BoxFBigSet(Box, &Ph2Box); //2페이즈 시작 전 셋팅
 
 	Ph2Box.LastScore += Box.FirstScore; //시작부분의 점수 누적
