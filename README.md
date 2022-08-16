@@ -7,5 +7,9 @@ ImageFolder 폴더를 C드라이브 바로 아래로 옮겨주세요.
 Debug->CConsoleGame4.exe를 실행해서 플레이 할 수 있습니다.
 
 
-https://user-images.githubusercontent.com/46243553/184872820-c68f1a80-6c04-4469-9f40-c1a1aee6028d.mp4
+
+
+https://user-images.githubusercontent.com/46243553/184873103-c04d928b-eaf3-4aee-a205-4bc148df9e67.mp4
+
+
 
